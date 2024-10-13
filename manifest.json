@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "コンフルの見出しLINK出すやつ君",
+    "version": "1.0",
+    "description": "見出しをとりあえず取得する",
+    "action": {
+        "default_popup": "index.html"
+      }
+    ,    
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["dist/app.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
